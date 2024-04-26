@@ -1,0 +1,50 @@
+.About1Page h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding-bottom: 60px;
+  }
+  
+  @media (max-width: 768px) {
+    .About1Page h1 {
+      padding-bottom: 0;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .About1Page h1 {
+      padding-bottom: 120px;
+    }
+  }
+  
+  .st0 {
+    stroke: #FFFFFF;
+    fill: none;
+    stroke-width: 3;
+    stroke-dasharray: 1800; /* Adjust based on your SVG path length */
+    stroke-dashoffset: 1800;
+    animation: animate 5s forwards cubic-bezier(0, 0.23, 1, 0.1);
+    animation-delay: 2.2s; /* Delays the start of the animation */
+  }
+  
+  @keyframes animate {
+    0% {
+      stroke-dashoffset: 2000;
+      fill: none;
+    }
+    50% {
+      stroke-dashoffset: 0;
+      fill: none;
+    }
+    60% {
+      stroke-dashoffset: 0;
+      fill: rgba(255, 255, 255, 0); /* Begin introducing the fill earlier */
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill: #FFFFFF; /* Complete the fill transition */
+    }
+  }
+  
