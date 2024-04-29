@@ -20,6 +20,29 @@ const Avatar = ({ isMobile }) => {
         }
     }, [actions]);
 
+    // useEffect(() => {
+    //     Object.keys(nodes).forEach(key => {
+    //         const node = nodes[key];
+    //         if (node.geometry && node.geometry.attributes.position) {
+    //             const positions = node.geometry.attributes.position.array;
+    //             let hasNaN = false;
+    //             for (let i = 0; i < positions.length; i++) {
+    //                 if (isNaN(positions[i])) {
+    //                     console.error(`NaN found at index ${i} in positions of ${key}`);
+    //                     hasNaN = true;
+    //                     break;
+    //                 }
+    //             }
+    //             if (!hasNaN) {
+    //                 console.log(`No NaN values found in positions of ${key}`);
+    //             }
+    //         } else {
+    //             console.log(`${key} has no geometry or position attribute`);
+    //         }
+    //     });
+    // }, [nodes]);
+
+
     // Adjust the initial rotation and position here
     const initialRotation = [-Math.PI / 2, 0, 0]; // Adjust as necessary to align the model
     const initialPosition = isMobile ? [0, -1.5, 0] : [0, -2, 0]; // Lift the model up a bit
