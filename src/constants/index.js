@@ -24,6 +24,13 @@ import {
   tripguide,
   bayes,
   pinect,
+  euchre,
+  insta485,
+  mapreduce,
+  searchengine,
+  dbfakebook,
+  piazza,
+  ohqueue,
   threejs,
   cplusplus,
   matlab,
@@ -216,7 +223,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "ThreeJS",
+        name: "threeJS",
         color: "green-text-gradient",
       },
       {
@@ -241,7 +248,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "MongoDBAtlas",
+        name: "mongoDBAtlas",
         color: "pink-text-gradient",
       },
     ],
@@ -249,26 +256,191 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Naive Bayes Classifier",
+    name: "Search Engine",
     description:
-      "A Naive Bayes classifier to distinguish fake from real news articles, utilizing data from the Kaggle fake and real news dataset. A tool for spotting deceptive online content, showcasing expertise in machine learning, text classification, and data analysis.",
+      "A Python application that employs information retrieval techniques like tf-idf and PageRank, alongside parallel data processing via MapReduce. This project unfolds in three stages: first, constructing a segmented inverted index and an Index server through a MapReduce pipeline; second, enhancing the Index server with a REST API for JSON search results; and finally, building a Search server with a user interface that simulates search engines like Google or Bing.",
     tags: [
       {
         name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "pandas",
+        name: "restapi",
         color: "green-text-gradient",
       },
       {
-        name: "Anaconda",
+        name: "flask",
         color: "pink-text-gradient",
       },
     ],
-    image: bayes,
+    image: searchengine,
     source_code_link: "https://github.com/",
   },
+  {
+    name: "Mapreduce Project",
+    description:
+      "A Python-based MapReduce framework inspired by Google's original concept, for distributed processing on platforms like AWS EMR or Microsoft Azure HDInsight. It focuses on executing MapReduce programs, exploring distributed systems, fault tolerance, OS-level concurrency with threads and processes, and networking via sockets. The framework consists of a Manager that distributes MapReduce tasks to multiple Workers, who then execute the map and reduce functions, demonstrating efficient data processing across a computer cluster.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mapreduce,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Instagram App Clone",
+    description:
+      "A three-part project that begins with a Python static site generator, advances to server-side dynamic pages with CRUD operations on a SQL database, and culminates in a client-side dynamic application using JavaScript and AJAX, to interact with a REST API, enabling a full interactive experience similar to modern web applications.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SQL",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: insta485,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Social Media Database",
+    description:
+      "A fictional social media platform called Fakebook, employs Java and SQL for its design and implementation with a relational database. This project involves developing a Java application that executes SQL queries against the database, effectively managing query results within specially designed data structures.",
+    tags: [
+      {
+        name: "java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "databases",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: dbfakebook,
+    source_code_link: "https://github.com/",
+  },
+  // {
+  // name: "MongoDB & Hashing Database",
+  // description: "This project delves into MongoDB, extracting data from the Fakebook database and seamlessly importing it for advanced querying. Subsequently, participants transition to implementing the Grace Hash Join algorithm in C++",
+  // tags: [
+  //   {
+  //     name: "Hashing",
+  //     color: "blue-text-gradient",
+  //   },
+  //   {
+  //     name: "sql",
+  //     color: "green-text-gradient",
+  //   },
+  //   {
+  //     name: "databases",
+  //     color: "pink-text-gradient",
+  //   },
+  // ],
+  // image: cplusplus,
+  // source_code_link: "https://github.com/",
+  // },
+  {
+  name: "Office Hour Queue",
+  description: "A web server dedicated to managing an office hours queue. Using concepts such as container ADTs, dynamic memory, the Big Three, linked lists, and iterators, allows it to be an effective web application accessible with any web browser.",
+  tags: [
+    {
+      name: "c++",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "json",
+      color: "green-text-gradient",
+    },
+    {
+      name: "databases",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: ohqueue,
+  source_code_link: "https://github.com/",
+  },
+  {
+    name: "Piazza Post Identifier",
+    description: "An application using NLP and machine learning to identify Piazza post subjects. It employs concepts like Container ADTs, Dynamic Memory, Linked Lists, and Iterators. Through recursion, binary trees, templates, comparators, and map data structures, it accurately parses and identifies  post subjects.",
+    tags: [
+      {
+        name: "c++",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ml",
+        color: "green-text-gradient",
+      },
+      {
+        name: "bst",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: piazza,
+    source_code_link: "https://github.com/",
+    },
+  {
+    name: "Euchre Game",
+    description:
+      "A comprehensive C++ application with foundational OOP concepts, incorporating Abstract Data Types, progresses to utilizing Derived Classes and Inheritance, and culminates in a sophisticated use of Polymorphism. The result is a dynamic Euchre game simulator that supports interactions between AI and human players.",
+    tags: [
+      {
+        name: "C++",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "AbstractDataTypes",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ObjectOrientedProgramming",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: euchre,
+    source_code_link: "https://github.com/",
+  },
+  // {
+  //   name: "New project four",
+  //   description:
+  //     "adfl;sdfkdsja;fjasdlkjfdsla;kjflkjsadlfjksadlkjf",q
+  //   tags: [
+  //     {
+  //       name: "python",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "pandas",
+  //       color: "green-text-gradient",
+  //     },q
+  //     {
+  //       name: "Anaconda",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: bayes,
+  //   source_code_link: "https://github.com/",
+  // },
 ];
 
 export { services, listCodeLanguages, experiences, testimonials, projects };

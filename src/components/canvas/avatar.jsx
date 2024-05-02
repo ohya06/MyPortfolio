@@ -44,8 +44,8 @@ const Avatar = ({ isMobile }) => {
 
 
     // Adjust the initial rotation and position here
-    const initialRotation = [-Math.PI / 2, 0, 0]; // Adjust as necessary to align the model
-    const initialPosition = isMobile ? [0, -1.5, 0] : [0, -2, 0]; // Lift the model up a bit
+    // const initialRotation = [-Math.PI / 2, 0, 0]; // Adjust as necessary to align the model
+    // const initialPosition = isMobile ? [0, -1.5, 0] : [0, -2, 0]; // Lift the model up a bit
     const scale = isMobile ? [1, 1, 1] : [2, 2, 2];
     const position = isMobile ? [0, -1.50, 0] : [0, -2, 0];
 

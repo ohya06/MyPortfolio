@@ -38,9 +38,16 @@ import newEagle from "./company/newEagle.png";
 // import starbucks from "./company/starbucks.png";
 // import tesla from "./company/tesla.png";
 
-import portfolio from "./portfolio.png"
-import bayes from "./bayes.png"
-import pinect from "./pinect.png"
+import portfolio from "./portfolio.png";
+import bayes from "./bayes.png";
+import pinect from "./pinect.png";
+import euchre from "./euchre.png";
+import insta485 from "./insta485.png";
+import mapreduce from "./mapreduce.png";
+import searchengine from "./searchengine.png";
+import dbfakebook from "./databasefakebook.png";
+import piazza from "./piazza.png";
+import ohqueue from "./ohqueue.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -91,6 +98,13 @@ export {
   bayes,
   portfolio,
   pinect,
+  euchre,
+  insta485,
+  mapreduce,
+  searchengine,
+  dbfakebook,
+  piazza,
+  ohqueue,
   carrent,
   jobit,
   tripguide,
