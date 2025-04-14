@@ -1,17 +1,12 @@
+CSS
 .About1Page h1 {
-  text-align: center;
-  width: 100%;
-  padding: 1rem 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding-bottom: 60px;
   }
-
-.About1Page svg {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-  }
-
   
   @media (max-width: 768px) {
     .About1Page h1 {
@@ -32,7 +27,7 @@
     stroke-dasharray: 1800; /* Adjust based on your SVG path length */
     stroke-dashoffset: 1800;
     animation: animate 5s forwards cubic-bezier(0, 0.23, 1, 0.1);
-    animation-delay: 1.0s; /* Delays the start of the animation */
+    animation-delay: 2.2s; /* Delays the start of the animation */
   }
   
   @keyframes animate {
@@ -54,3 +49,24 @@
     }
   }
   
+  JSX
+
+  import React from "react";
+
+import { BallCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { listCodeLanguages } from "../constants";
+
+const CodeLanguages = () => {
+  return (
+    <div className='flex flex-row flex-wrap justify-center gap-10'>
+      {listCodeLanguages.map((technology) => (
+        <div className='w-28 h-28' key={technology.name}>
+          <BallCanvas icon={technology.icon} />
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default SectionWrapper(CodeLanguages, "");
